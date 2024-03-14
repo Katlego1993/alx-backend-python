@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
-"""Defines duck typed function"""
+""" Duck typing - first element of a sequence """
 from typing import Any, Sequence, Union
 
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
-    """
-    Safely returns the first element of a list if it exists, otherwise returns None.
-
-    Args:
-        lst (List[Any]): The input list of any type.
-
-    Returns:
-        Union[Any, None]: The first element of the list if it exists, otherwise None.
+    """ Type-annotated function safe_first_element that takes a iterable
+        argument.
+        Args:
+            lstr: iterable object.
     """
     if lst:
         return lst[0]
