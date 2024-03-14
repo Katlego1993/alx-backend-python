@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
+""" Type Checking """
+from typing import Tuple, List
 
-from typing import Tuple, Any
 
-def zoom_array(lst: Tuple[Any, ...], factor: int = 2) -> Tuple[Any, ...]:
-    zoomed_in: Tuple[Any, ...] = tuple(
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """ Type-annotated function zoom_array. """
+    zoomed_in: List = [
         item for item in lst
-        for _ in range(factor)
-    )
+        for i in range(factor)
+    ]
     return zoomed_in
 
 
-array = (12, 72, 91)  # Use parentheses for tuples
+array = tuple([12, 72, 91])
 
 zoom_2x = zoom_array(array)
 
-zoom_3x = zoom_array(array, 3) 
+zoom_3x = zoom_array(array, int(3.0))

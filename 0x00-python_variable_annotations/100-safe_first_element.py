@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+"""Defines duck typed function"""
+from typing import Any, Sequence, Union
 
-from typing import Any, List, Union
 
-def safe_first_element(lst: List[Any]) -> Union[Any, None]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """
-    Safely returns the first element of a list if it exists, otherwise returns None.
+     Safely returns the first element of a list if it exists, otherwise returns None.
 
     Args:
         lst (List[Any]): The input list of any type.
