@@ -5,7 +5,7 @@ from typing import Any, Sequence, Union
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """
-     Safely returns the first element of a list if it exists, otherwise returns None.
+    Safely returns the first element of a list if it exists, otherwise returns None.
 
     Args:
         lst (List[Any]): The input list of any type.
