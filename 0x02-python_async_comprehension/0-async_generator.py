@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
-This module provides an asynchronous generator function that yields a
-random float between 0 and 10 after a one second delay for a total of
-10 iterations.
+Creates a generator
 """
 import asyncio
 import random
